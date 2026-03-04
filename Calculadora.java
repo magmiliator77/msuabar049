@@ -63,6 +63,13 @@ public class Calculadora {
         resultado = numero1 / numero2;
     }
 
+    public int modulo() {
+        if (numero2 == 0) {
+            throw new ArithmeticException("No se puede calcular modulo con 0");
+        }
+        return numero1 % numero2;
+    }
+
     public double getResultado() {
         return resultado;
     }
